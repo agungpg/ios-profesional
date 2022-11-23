@@ -18,14 +18,15 @@ class AccountSummaryViewController: UIViewController {
     var profile: Profile?
     var accounts: [AccountSummaryCell.ViewModel] = []
     
-    let games = [
-        "Pacman",
-        "Space Invaders",
-        "Space Patrol",
-    ]
     
     let stackView = UIStackView()
     let label = UILabel()
+    lazy var logoutBarButtonItem: UIBarButtonItem = {
+        let barButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutTapped))
+        barButtonItem.tintColor = .label
+        
+        return barButtonItem
+    }()
     
     var tableView = UITableView()
     
@@ -33,9 +34,13 @@ class AccountSummaryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        setupNavigationBar()
     }
     
-    
+    func setupNavigationBar() {
+        navigationItem.rightBarButtonItem = logoutBarButtonItem
+    }
+
 }
 
 extension AccountSummaryViewController {
@@ -137,5 +142,15 @@ extension AccountSummaryViewController {
     
     private func fetchProfile(){
         
+    }
+}
+
+
+
+// MARK: Actions
+extension AccountSummaryViewController {
+    @objc func logoutTapped(sender: UIButton) {
+        print("logoutTapped")
+        NotificationCenter.default.post(name: .logout, object: nil)
     }
 }
