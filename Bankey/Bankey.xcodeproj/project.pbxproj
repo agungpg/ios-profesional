@@ -27,6 +27,8 @@
 		33431793292E4EE1006B5191 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33431792292E4EE1006B5191 /* AccountSummaryViewController+Networking.swift */; };
 		33431797292F6B47006B5191 /* ProfileTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33431796292F6B47006B5191 /* ProfileTest.swift */; };
 		33431799292F6D03006B5191 /* AccountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33431798292F6D03006B5191 /* AccountTest.swift */; };
+		33690C8F293383650017A1F6 /* SkelatonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33690C8E293383650017A1F6 /* SkelatonLoadable.swift */; };
+		33690C91293385820017A1F6 /* SkelatonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33690C90293385820017A1F6 /* SkelatonCell.swift */; };
 		33D9EDA22925011800F7DF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9EDA12925011800F7DF0D /* AppDelegate.swift */; };
 		33D9EDA62925011800F7DF0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9EDA52925011800F7DF0D /* LoginViewController.swift */; };
 		33D9EDAB2925011A00F7DF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D9EDAA2925011A00F7DF0D /* Assets.xcassets */; };
@@ -66,6 +68,8 @@
 		33431792292E4EE1006B5191 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		33431796292F6B47006B5191 /* ProfileTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTest.swift; sourceTree = "<group>"; };
 		33431798292F6D03006B5191 /* AccountTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
+		33690C8E293383650017A1F6 /* SkelatonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkelatonLoadable.swift; sourceTree = "<group>"; };
+		33690C90293385820017A1F6 /* SkelatonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkelatonCell.swift; sourceTree = "<group>"; };
 		33D9ED9E2925011800F7DF0D /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D9EDA12925011800F7DF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33D9EDA52925011800F7DF0D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				3315DB71292BAF8F00B859D4 /* AccountSummaryCell.swift */,
+				33690C8E293383650017A1F6 /* SkelatonLoadable.swift */,
+				33690C90293385820017A1F6 /* SkelatonCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3315DB65292A304E00B859D4 /* UIViewController+Utils.swift in Sources */,
+				33690C91293385820017A1F6 /* SkelatonCell.swift in Sources */,
 				33431791292E4D95006B5191 /* Date+Utils.swift in Sources */,
 				33D9EDB82925054000F7DF0D /* LoginView.swift in Sources */,
 				3315DB63292A131700B859D4 /* LocalState.swift in Sources */,
@@ -353,6 +360,7 @@
 				3315DB76292BDBE200B859D4 /* CurrencyFormatter.swift in Sources */,
 				33D9EDA62925011800F7DF0D /* LoginViewController.swift in Sources */,
 				3343178A292CF05D006B5191 /* NSNotificationName.swift in Sources */,
+				33690C8F293383650017A1F6 /* SkelatonLoadable.swift in Sources */,
 				3315DB74292BDBD000B859D4 /* Decimal+Utils.swift in Sources */,
 				3343178F292E29D4006B5191 /* ShakeyBellView.swift in Sources */,
 				3315DB72292BAF8F00B859D4 /* AccountSummaryCell.swift in Sources */,
