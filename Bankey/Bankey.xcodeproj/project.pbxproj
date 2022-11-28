@@ -29,6 +29,8 @@
 		33431799292F6D03006B5191 /* AccountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33431798292F6D03006B5191 /* AccountTest.swift */; };
 		33690C8F293383650017A1F6 /* SkelatonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33690C8E293383650017A1F6 /* SkelatonLoadable.swift */; };
 		33690C91293385820017A1F6 /* SkelatonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33690C90293385820017A1F6 /* SkelatonCell.swift */; };
+		33690C942935006A0017A1F6 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33690C932935006A0017A1F6 /* ProfileManager.swift */; };
+		33690C962935023A0017A1F6 /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33690C952935023A0017A1F6 /* AccountSummaryViewControllerTests.swift */; };
 		33D9EDA22925011800F7DF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9EDA12925011800F7DF0D /* AppDelegate.swift */; };
 		33D9EDA62925011800F7DF0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9EDA52925011800F7DF0D /* LoginViewController.swift */; };
 		33D9EDAB2925011A00F7DF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D9EDAA2925011A00F7DF0D /* Assets.xcassets */; };
@@ -70,6 +72,8 @@
 		33431798292F6D03006B5191 /* AccountTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
 		33690C8E293383650017A1F6 /* SkelatonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkelatonLoadable.swift; sourceTree = "<group>"; };
 		33690C90293385820017A1F6 /* SkelatonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkelatonCell.swift; sourceTree = "<group>"; };
+		33690C932935006A0017A1F6 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		33690C952935023A0017A1F6 /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		33D9ED9E2925011800F7DF0D /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D9EDA12925011800F7DF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33D9EDA52925011800F7DF0D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 		3315DB68292A636D00B859D4 /* AccountSummary */ = {
 			isa = PBXGroup;
 			children = (
+				33690C92293500570017A1F6 /* Networking */,
 				3315DB69292A639B00B859D4 /* AccountSummaryViewController.swift */,
 				33431792292E4EE1006B5191 /* AccountSummaryViewController+Networking.swift */,
 				3315DB6F292BAF4D00B859D4 /* Header */,
@@ -180,8 +185,17 @@
 			children = (
 				33431796292F6B47006B5191 /* ProfileTest.swift */,
 				33431798292F6D03006B5191 /* AccountTest.swift */,
+				33690C952935023A0017A1F6 /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		33690C92293500570017A1F6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				33690C932935006A0017A1F6 /* ProfileManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		33D9ED952925011800F7DF0D = {
@@ -342,6 +356,7 @@
 				3315DB85292C0E3300B859D4 /* CurrencyFormatterTests.swift in Sources */,
 				33431799292F6D03006B5191 /* AccountTest.swift in Sources */,
 				33431797292F6B47006B5191 /* ProfileTest.swift in Sources */,
+				33690C962935023A0017A1F6 /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +367,7 @@
 				3315DB65292A304E00B859D4 /* UIViewController+Utils.swift in Sources */,
 				33690C91293385820017A1F6 /* SkelatonCell.swift in Sources */,
 				33431791292E4D95006B5191 /* Date+Utils.swift in Sources */,
+				33690C942935006A0017A1F6 /* ProfileManager.swift in Sources */,
 				33D9EDB82925054000F7DF0D /* LoginView.swift in Sources */,
 				3315DB63292A131700B859D4 /* LocalState.swift in Sources */,
 				3315DB6C292A6AF600B859D4 /* AccountSummaryHeaderView.swift in Sources */,
